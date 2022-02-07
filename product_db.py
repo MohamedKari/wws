@@ -14,7 +14,7 @@ class Product():
     return gross_price
   
   def describe(self):
-    print("This product has the name ", self.name, ", kostet netto", self.net_price, "und hat einen MwSt-Satz von ", self.tax_rate, "% und der Brutto-Preis ist", self.compute_gross_price())
+    print("Ce produit est ", self.name, ", kostet netto", self.net_price, "und hat einen MwSt-Satz von ", self.tax_rate, "% und der Brutto-Preis ist", self.compute_gross_price())
 
 class FreshProduct(Product):
   def __init__(self, name, tax_rate, net_price, best_before_date):
